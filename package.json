@@ -20,7 +20,8 @@
   "homepage": "https://github.com/NelsonRamirezC/m6_l1_ejercicio1#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "random-words": "^1.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
