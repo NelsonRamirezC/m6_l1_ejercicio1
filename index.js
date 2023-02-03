@@ -27,7 +27,12 @@ app.get('/azar', function(req, res){
 })
 
 app.put('/azar', function(req, res){
-  res.send("azar número")
+  let randomNumber = Math.floor(Math.random() * (50000 - 10) + 10);
+  res.send(`<h1>${randomNumber}</h1>`)
+})
+
+app.all('*', function(req, res){
+  res.send(`<h1>Aún no estoy preparado para responder al método ${req.method}</h1>`)
 })
 
 app.listen(3000,() => console.log("Servidor escuchando en http://localhost:3000"))
